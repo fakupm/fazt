@@ -1,16 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Greeting, UserCard } from "./Greeting";
+import Product, { Navbar } from "./Product";
+import { Button } from "./Button";
+import {TaskCard} from './Task'
+import {Saludar} from './Saludar'
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-function Greeting() {
-  return <div>
-    <h1>Facundo PM</h1>
-    <p>lorem 124</p>
-  </div>
-}
-
-root.render(<div>
-  <Greeting/>
-  <Greeting/>
-</div>)
+root.render(
+  <>
+    <TaskCard ready={true}/>
+    <Saludar/>
+  </>
+);
